@@ -1,6 +1,6 @@
 ---
 apiVersion: apps/v1
-kind: StatefulSet
+kind: StatefulSet  # 영속성을 가지기 위해...
 metadata:
   name: mariadb
   labels:
@@ -18,7 +18,7 @@ spec:
       containers:
         - name: mariadb
           # 여러분의 디비 이미지 주소
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_0daa53b6ed6e
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_15010b3c62de
           env:
             - name: TZ
               value: Asia/Seoul
